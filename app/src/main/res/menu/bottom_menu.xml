@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Trang chủ"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/categoryFragment"
+        android:icon="@drawable/ic_baseline_category_24"
+        android:title="Phân loại"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/personalFragment"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:title="Cá nhân"
+        app:showAsAction="ifRoom" />
+</menu>

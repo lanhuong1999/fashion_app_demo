@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="?attr/actionBarSize"
+    android:layout_height="?attr/actionBarSize">
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_baseline_shopping_cart_24"
+        android:layout_gravity="center"/>
+    <TextView
+        android:id="@+id/txt_count_cart"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/badge"
+        android:text="12"
+        android:textColor="@color/white"
+        android:textSize="10dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"/>
+
+</FrameLayout>

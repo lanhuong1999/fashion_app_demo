@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.fashionapp.ui.home.HomeFragment"
+        android:label="Trang chủ"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_detailActivity"
+            app:destination="@id/detailActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/categoryFragment"
+        android:name="com.example.fashionapp.ui.category.CategoryFragment"
+        android:label="Phân loại"
+        tools:layout="@layout/fragment_category" />
+    <fragment
+        android:id="@+id/offersFragment"
+        android:name="com.example.fashionapp.ui.coupon.OffersFragment"
+        android:label="Mã khuyến mãi"
+        tools:layout="@layout/fragment_offers" />
+    <fragment
+        android:id="@+id/myCartFragment"
+        android:name="com.example.fashionapp.ui.giohang.MyCartFragment"
+        android:label="Giỏ hàng"
+        tools:layout="@layout/fragment_my_cart" />
+    <fragment
+        android:id="@+id/personalFragment"
+        android:name="com.example.fashionapp.ui.PersonalFragment"
+        android:label="Cá nhân"
+        tools:layout="@layout/fragment_personal" />
+    <fragment
+        android:id="@+id/placeOrderFragment"
+        android:name="com.example.fashionapp.ui.placeOrder.PlaceOrderFragment"
+        android:label="Đặt hàng"
+        tools:layout="@layout/fragment_place_order" />
+    <fragment
+        android:id="@+id/aoFragment"
+        android:name="com.example.fashionapp.ui.ao.AoFragment"
+        android:label="Áo"
+        tools:layout="@layout/fragment_ao" />
+    <fragment
+        android:id="@+id/quanFragment"
+        android:name="com.example.fashionapp.ui.quan.QuanFragment"
+        android:label="Quần"
+        tools:layout="@layout/fragment_quan" />
+    <fragment
+        android:id="@+id/phuKienFragment"
+        android:name="com.example.fashionapp.ui.phukien.PhuKienFragment"
+        android:label="Phụ kiện"
+        tools:layout="@layout/fragment_phu_kien" />
+    <fragment
+        android:id="@+id/giayFragment"
+        android:name="com.example.fashionapp.ui.giay.GiayFragment"
+        android:label="Giày"
+        tools:layout="@layout/fragment_giay" />
+    <fragment
+        android:id="@+id/baloFragment"
+        android:name="com.example.fashionapp.ui.balo.BaloFragment"
+        android:label="Ba lô"
+        tools:layout="@layout/fragment_balo" />
+    <activity
+        android:id="@+id/detailActivity"
+        android:name="com.example.fashionapp.activity.DetailActivity"
+        android:label="activity_detail"
+        tools:layout="@layout/activity_detail" />
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.fashionapp.ui.timkiem.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" />
+    <fragment
+        android:id="@+id/nhaCungCapFragment"
+        android:name="com.example.fashionapp.ui.nhaCungCap.NhaCungCapFragment"
+        android:label="Chi tiết nhà cung cấp"
+        tools:layout="@layout/fragment_nha_cung_cap" />
+    <fragment
+        android:id="@+id/doiMatKhauFragment"
+        android:name="com.example.fashionapp.ui.changePass.DoiMatKhauFragment"
+        android:label="Đổi mật khẩu"
+        tools:layout="@layout/fragment_doi_mat_khau" />
+
+</navigation>

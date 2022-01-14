@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.fashionapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FashionApp"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".ui.the.TheActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.donhang.ChiTietDonHang"
+            android:exported="true" />
+        <activity
+            android:name=".ui.donhang.DonHangActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.yeuthich.YeuThichActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.DetailActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.profile.ProfileFragment"
+            android:exported="true" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:exported="true"
+            android:label="@string/title_activity_main"
+            android:theme="@style/Theme.FashionApp.NoActionBar" />
+        <activity
+            android:name=".activity.SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.RegistrationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>
